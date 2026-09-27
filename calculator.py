@@ -11,6 +11,9 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+def multiply(a, b):
+    return a * b
+
 def main():
     while True:
         print("\n--- Calculator Master ---")
@@ -38,6 +41,8 @@ def main():
             print(f"{num1} + {num2} = {add(num1, num2)}")
         elif choice == '2':
             print(f"{num1} - {num2} = {subtract(num1, num2)}")
+        elif choice == '3':
+            print(f"{num1} * {num2} = {multiply(num1, num2)}")
         else:
             print("Operation not yet fully implemented.")
 
