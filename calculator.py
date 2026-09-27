@@ -31,8 +31,10 @@ def main():
         num2 = get_number("Enter second number: ")
 
         print("\n--- Result ---")
-        # Operations will be called here
-        print("Operation not yet fully implemented.")
+        if choice == '1':
+            print(f"{num1} + {num2} = {add(num1, num2)}")
+        else:
+            print("Operation not yet fully implemented.")
 
 if __name__ == "__main__":
     main()
