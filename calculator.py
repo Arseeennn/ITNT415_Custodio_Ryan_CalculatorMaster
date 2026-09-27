@@ -14,6 +14,11 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero is not allowed!"
+    return a / b
+
 def main():
     while True:
         print("\n--- Calculator Master ---")
@@ -43,8 +48,12 @@ def main():
             print(f"{num1} - {num2} = {subtract(num1, num2)}")
         elif choice == '3':
             print(f"{num1} * {num2} = {multiply(num1, num2)}")
-        else:
-            print("Operation not yet fully implemented.")
+        elif choice == '4':
+            result = divide(num1, num2)
+            if isinstance(result, str):
+                print(result) 
+            else:
+                print(f"{num1} / {num2} = {result}")
 
 if __name__ == "__main__":
     main()
