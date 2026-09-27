@@ -8,6 +8,9 @@ def get_number(prompt):
 def add(a, b):
     return a + b
 
+def subtract(a, b):
+    return a - b
+
 def main():
     while True:
         print("\n--- Calculator Master ---")
