@@ -43,17 +43,17 @@ def main():
 
         print("\n--- Result ---")
         if choice == '1':
-            print(f"{num1} + {num2} = {add(num1, num2)}")
+            print(f"When you add {num1} and {num2} together, the total sum is {add(num1, num2)}.")
         elif choice == '2':
-            print(f"{num1} - {num2} = {subtract(num1, num2)}")
+            print(f"If you subtract {num2} from {num1}, the remaining difference is {subtract(num1, num2)}.")
         elif choice == '3':
-            print(f"{num1} * {num2} = {multiply(num1, num2)}")
+            print(f"Multiplying {num1} by {num2} gives you a final product of {multiply(num1, num2)}.")
         elif choice == '4':
             result = divide(num1, num2)
             if isinstance(result, str):
-                print(result) 
+                print(f"Calculation failed: {result}") 
             else:
-                print(f"{num1} / {num2} = {result}")
+                print(f"Dividing {num1} by {num2} results in {result}.")
 
 if __name__ == "__main__":
     main()
