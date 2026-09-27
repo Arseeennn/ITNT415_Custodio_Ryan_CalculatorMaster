@@ -36,6 +36,8 @@ def main():
         print("\n--- Result ---")
         if choice == '1':
             print(f"{num1} + {num2} = {add(num1, num2)}")
+        elif choice == '2':
+            print(f"{num1} - {num2} = {subtract(num1, num2)}")
         else:
             print("Operation not yet fully implemented.")
 
