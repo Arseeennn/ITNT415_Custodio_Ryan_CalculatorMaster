@@ -8,6 +8,9 @@ def get_number(prompt):
 def add(a, b):
     return a + b
 
+def subtract(a, b):
+    return a - b
+
 def main():
     while True:
         print("\n--- Calculator Master ---")
@@ -33,6 +36,8 @@ def main():
         print("\n--- Result ---")
         if choice == '1':
             print(f"{num1} + {num2} = {add(num1, num2)}")
+        elif choice == '2':
+            print(f"{num1} - {num2} = {subtract(num1, num2)}")
         else:
             print("Operation not yet fully implemented.")
 
